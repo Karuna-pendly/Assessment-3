@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music for everyone - Spotify</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/albums.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/spotify-logo.svg" />
+            </div>
+            <!-- This is the menu that will be shown on mobile devices-->
+            <nav class="nav-mobile">
+                <!-- Profile -->
+                <div class="profile">
+                    <svg viewBox="0 0 1024 1024" class="profile-icon">
+              <path
+                d="M730.06 679.64q-45.377 53.444-101.84 83.443t-120 29.999q-64.032 0-120.75-30.503t-102.6-84.451q-40.335 13.109-77.645 29.747t-53.948 26.722l-17.142 10.084Q106.388 763.84 84.96 802.41t-21.428 73.107 25.461 59.242 60.754 24.705h716.95q35.293 0 60.754-24.705t25.461-59.242-21.428-72.603-51.679-57.225q-6.554-4.033-18.907-10.84t-51.427-24.453-79.409-30.755zm-221.84 25.72q-34.285 0-67.561-14.873t-60.754-40.335-51.175-60.502-40.083-75.124-25.461-84.451-9.075-87.728q0-64.032 19.915-116.22t54.452-85.964 80.67-51.931 99.072-18.151 99.072 18.151 80.67 51.931 54.452 85.964 19.915 116.22q0 65.04-20.167 130.58t-53.948 116.72-81.426 83.443-98.568 32.268z"
+              ></path>
+            </svg>
+                </div>
+                <!-- Hamburger menu -->
+                <input type="checkbox" class="toggler" />
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div class="background-overlay"></div>
+                    <div class="menu-overlay">
+                        <ul>
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Download</a></li>
+                            <li role="separator"></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                        <div class="menu-overlay-logo">
+                            <img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/spotify-logo.svg" />
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- This is the menu that will be shown on Desktop -->
+            <nav class="nav-desktop">
+                <!-- Site menu -->
+                <ul>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li role="separator"></li>
+                </ul>
+                <!-- Profile menu -->
+                <div class="profile-container">
+                    <input type="checkbox" class="dropdown-menu-toggler" />
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                    <div class="profile">
+                        <svg viewBox="0 0 1024 1024" class="profile-icon">
+                <path
+                  d="M730.06 679.64q-45.377 53.444-101.84 83.443t-120 29.999q-64.032 0-120.75-30.503t-102.6-84.451q-40.335 13.109-77.645 29.747t-53.948 26.722l-17.142 10.084Q106.388 763.84 84.96 802.41t-21.428 73.107 25.461 59.242 60.754 24.705h716.95q35.293 0 60.754-24.705t25.461-59.242-21.428-72.603-51.679-57.225q-6.554-4.033-18.907-10.84t-51.427-24.453-79.409-30.755zm-221.84 25.72q-34.285 0-67.561-14.873t-60.754-40.335-51.175-60.502-40.083-75.124-25.461-84.451-9.075-87.728q0-64.032 19.915-116.22t54.452-85.964 80.67-51.931 99.072-18.151 99.072 18.151 80.67 51.931 54.452 85.964 19.915 116.22q0 65.04-20.167 130.58t-53.948 116.72-81.426 83.443-98.568 32.268z"
+                ></path>
+              </svg>
+                    </div>
+                    <ul>
+                        <li>Profile</li>
+                        <li>
+                            <svg viewBox="0 0 1024 1024" class="profile-arrow">
+                  <path
+                    d="M476.455 806.696L95.291 425.532Q80.67 410.911 80.67 390.239t14.621-34.789 35.293-14.117 34.789 14.117L508.219 698.8l349.4-349.4q14.621-14.117 35.293-14.117t34.789 14.117 14.117 34.789-14.117 34.789L546.537 800.142q-19.159 19.159-38.318 19.159t-31.764-12.605z"
+                  ></path>
+                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Go Premium. Be happy.</h1>
+                <button class="hero-button">GET SPOTIFY PREMIUM</button>
+                <div class="terms">
+                    <span>*</span>
+                    <a href="#" class="hero-terms-link">Terms and conditions</a
+            ><span>apply.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ALBUMS -->
+    <section class="albums">
+      <div class="albums-container">
+        <div class="albums-content">
+          <h2>Looking for music?</h2>
+          <p>Start listening to the best new releases.</p>
+          <button>LAUNCH WEB PLAYER</button>
+        </div>
+        <div class="albums-cards-container">
+          <!-- Travis Scott -->
+          <div class="album">
+            <img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/travis-scott.jpg" />
+            <div class="album-info">
+              <h2>FRANCHISE (feat. Young Thug & M.I.A.)</h2>
+              <h4>Travis Scott</h4>
+              <a href="#">PLAY NOW</a>
+                </div>
+            </div>
+            <!-- ZAYN -->
+            <div class="album">
+                <img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/zayn.jpg" />
+                <div class="album-info">
+                    <h2>Better</h2>
+                    <h4>ZAYN</h4>
+                    <a href="#">PLAY NOW</a>
+                </div>
+            </div>
+            <!-- Joji -->
+            <div class="album">
+                <img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/joji.jpg" />
+                <div class="album-info">
+                    <h2>Nectar</h2>
+                    <h4>Joji</h4>
+                    <a href="#">PLAY NOW</a>
+                </div>
+            </div>
+            <!-- Jennifer Lopez -->
+            <div class="album">
+                <img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/jennifer-lopez.jpg" />
+                <div class="album-info">
+                    <h2>Pa Ti + Lonely</h2>
+                    <h4>Jennifer Lopez</h4>
+                    <a href="#">PLAY NOW</a>
+                </div>
+            </div>
+            <!-- Machine Gun Kelly -->
+            <div class="album">
+                <img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/machine-gun-kelly.jpg" />
+                <div class="album-info">
+                    <h2>Tickets To My Downfall</h2>
+                    <h4>Machine Gun Kelly</h4>
+                    <a href="#">PLAY NOW</a>
+                </div>
+            </div>
+            <!-- Cold -->
+            <div class="album">
+                <img src="https://th.bing.com/th/id/OIP.HNEt0r_aueKDQJJz79h2DgHaEZ?w=303&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" />
+                <div class="album-info">
+                    <h2>Cold</h2>
+                    <h4>Chris Stapleton</h4>
+                    <a href="#">PLAY NOW</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <nav class="footer-nav">
+            <div class="logo-footer">
+                <a href="#"><img src="https://raw.githubusercontent.com/clumes/spotify-home-page/99581953e85245e00181e2f481cd1fba8efbdad9/images/spotify-logo.svg" /></a>
+            </div>
+            <div class="top-links">
+                <div class="company-links">
+                    <ul>
+                        <li>COMPANY</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="communities-links">
+                    <ul>
+                        <li>COMMUNITIES</li>
+                        <li><a href="#">For artists</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="useful-links">
+                    <ul>
+                        <li>USEFUL LINKS</li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Web Player</a></li>
+                        <li><a href="#">Free Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="#"><img src="data:image/png;base64,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"
+                            /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://th.bing.com/th/id/OIP.3p8349duRoWG-vlV1yQdJQHaHa?w=64&h=64&c=7&r=0&o=5&dpr=1.25&pid=1.7" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAM1BMVEU7WZhHY55TbaVfeKtrgrF4jLiEl76QocWdrMupttK1wdjCy9/O1eXa4Ozm6vLz9fn///9rRBnMAAAAoElEQVR42u3XwQqEMAxF0VSrxlHb/P/XamWmOgsXyQNFyN25eGdRpFASDmQusBAT0jYP0H6be68rlhrjuJ+y/Er6eZfknHr/kf/0ewwYBAOaDAKjgEAGgfY0TBPvWY+wt91adW+8/uYKRBQgB94HxG9LBcqX4lqU6xgFOhSIKEBPA/PjAKPAcNOv7IADDjjggBoINuCYMwZwef4bgOP5vwLHsC9Ii/qaQwAAAABJRU5ErkJggg=="
+                            /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="country">
+                <a href="#"><span>India</span><img src="https://www.bing.com/th?id=OIP.9YtAsanlFMBU3PoImltJpwHaFP&w=144&h=102&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" /></a>
+            </div>
+            <div class="bottom-links">
+                <ul>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">About Ads</a></li>
+                    <li><a href="#">Additional CA Privacy Disclosures</a></li>
+                </ul>
+                <span>&copy; 2021 Spotify AB</span>
+            </div>
+        </nav>
+    </footer>
+</body>
+<script src="./javascript.js"></script>
+
+</html>
